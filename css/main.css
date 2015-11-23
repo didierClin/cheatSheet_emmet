@@ -1,4 +1,11 @@
-
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
 
 /* ==========================================================================
    Author's custom styles
@@ -7,9 +14,30 @@
 body{ background-color: lightgray; font-family: 'Titillium Web', sans-serif;
       padding-top: 50px; padding-bottom: 20px;
 }
-.navbar-inverse { background-color: #49423a; } /* rgb(56, 30, 10); */
+.navbar-inverse { background-color: rgb(56, 30, 10);;
+  text-align: center;
+  padding: .3em 0;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  } /* rgb(56, 30, 10);  #49423a;  */
+.panneaux, Gen { margin-bottom: 5em;}
+
 .Gen { background-color: lightgreen; font-family: 'Titillium Web', sans-serif;}
 
-.Rhtml {background-color: lightblue; font-family: 'Titillium Web', sans-serif;}
+.Rhtml { background-color: lightblue; font-family: 'Titillium Web', sans-serif;}
 
-.Rcss {background-color: lightyellow; font-family: 'Titillium Web', sans-serif;}
+.Rcss { background-color: lightpink; font-family: 'Titillium Web', sans-serif;}
+
+.main-image { display: none; }
+.line-icon {
+ border-bottom: 2px solid white;
+ margin: 15px;
+}
+dt { margin-left: 5%; font-weight: bold; font-size: 1.7em;}
+dd { margin-left: 20%;font-weight: bolder; color: darkblue;}
+.spacer {padding-left: 3em;}
+.twoSpacer {padding-left: 6em;}
+@media screen and (min-width: 768px) {
+    .main-image { display: none; display: block; margin: 2em auto -1em;}
+}

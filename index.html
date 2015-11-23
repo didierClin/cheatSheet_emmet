@@ -40,9 +40,9 @@
       <div id="navbar" class="navbar-collapse collapse">
 
         <ul class="list-inline">
-          <li><a href="#Gg">Gg</a></li>
-          <li><a href="#Hh">Hh</a></li>
-          <li><a href="#Cc">Cc</a></li>
+          <li><a href="#lGEN">Pp</a></li>
+          <li><a href="#lHTML">Hh</a></li>
+          <li><a href="#lCSS">Cc</a></li>
           <li><a href="#">Zz</a></li>
         </ul>
 
@@ -54,20 +54,21 @@
   <header class="container-fluid" id="panneaux">
     <div class="row">
       <div class="col-sm-4 Gen">
-        <section class="Gen" id="A">
-          <a href="#" alt="Lien vers les principes generaux" title="Les principes generaux d'Emmet">
-            <img class="img-responsive" src="img/irony.png" alt="Les principes generaux Emmet" title="Les principes generaux Emmet" class="main-image"> </a>
-          <h2>Gg</h2>
+        <section  id="A">
+          <a href="#lGEN" alt="Lien vers les principes generaux" title="Les principes generaux d'Emmet">
+            <img class="img-responsive main-image" src="img/irony.png" alt="Les principes generaux Emmet" title="Les principes generaux Emmet"> </a>
+          <h2>Pp</h2>
           <div class="line-icon">
-            <h1>Les principes</h1>
+            <h1>Principes</h1>
             <img src="img/irony-icon.png">
           </div>
           <p>Les principes généraux d'Emmet</p>
         </section>
       </div>
       <div class="col-sm-4 Rhtml">
-        <section class="yellow" id="B">
-          <img class="img-responsive" src="img/espresso.png" alt="Les raccourcis HTML" title="Les raccourcis HTML" class="main-image">
+        <section  id="B">
+          <a href="#lHTML" alt="Lien vers raccourcis HTML" title="Les principaux raccourcis HTML">
+          <img class="img-responsive main-image" src="img/espresso.png" alt="Les raccourcis HTML" title="Les raccourcis HTML"> </a>
           <h2>Hh</h2>
           <div class="line-icon">
             <h1>HTML5</h1>
@@ -77,8 +78,9 @@
         </section>
       </div>
       <div class="col-sm-4 Rcss">
-        <section class="red" id="C">
-          <img class="img-responsive" src="img/biere.png" alt="Les raccourcis HTML" title="Les raccourcis HTML" class="main-image">
+        <section id="C">
+          <a href="#lCSS" alt="Lien vers raccourcis CSS" title="Les principaux raccourcis CSS">
+          <img class="img-responsive main-image" src="img/biere.png" alt="Les raccourcis HTML" title="Les raccourcis HTML" class="main-image"> </a>
           <h2>Cc</h2>
           <div class="line-icon">
             <h1>CSS3</h1>
@@ -88,18 +90,148 @@
         </section>
       </div>
     </div>
-
   </header>
+<!-- Fin du bloc entete -->
 
-
-  <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron">
+  <!-- General purpose of emmet -->
+  <section id="lGEN" class="general">
     <div class="container">
-      <h1>Hello, world!</h1>
+      <h1>Hello, world! 1</h1>
       <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
       <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
     </div>
-  </div>
+  </section>
+
+
+  <!-- Section for HTML commands -->
+  <section id="lHTML" class="lHTML">
+    <div class="container Rhtml">
+      <div class="row">
+        <div class="col-xs-1">
+              <h1>Raccourcis HTML</h1>
+        </div>
+
+        </div>
+        <div class="col-xs-5">
+                <h3><code> &gt;</code>&nbsp;&nbsp;Ajouter un élément enfant (child)</h3>
+                <dl class="list-inline">
+                <!-- li>p -->
+                   <dt>li&gt;p</dt> <dd>&lt;li&gt;</dd>
+                         <dd class="spacer">&lt;p&gt;&lt;/p&gt;</dd>
+                   <dd>&lt;/li&gt;</dd>
+                <!-- ul>li>p -->
+                   <dt>ul&gt;li&gt;p</dt>
+                        <dd>&lt;ul&gt;</dd>
+                            <dd class="spacer">&lt;li&gt;</dd>
+                                   <dd class="twoSpacer">&lt;p&gt;&lt;/p&gt;</dd>
+                            <dd class="spacer">&lt;/li&gt;</dd>
+                        <dd>&lt;ul&gt;</dd>
+                </dl>
+
+                <h3><code>+</code>&nbsp;&nbsp;Ajouter un élément frère (sibling)</h3>
+                <dl class="list-inline">
+                <!-- ul>li>p+a -->
+                  <dt>ul&gt;li&gt;p+a</dt>
+                       <dd>&lt;ul&gt;</dd>
+                           <dd class="spacer">&lt;li&gt;</dd>
+                                  <dd class="twoSpacer">&lt;p&gt;&lt;/p&gt;</dd>
+                                  <dd class="twoSpacer">&lt;a href=&quot;&quot;&gt:&lt;/a&gt;</dd>
+                           <dd class="spacer">&lt;/li&gt;</dd>
+                       <dd>&lt;ul&gt;</dd>
+                </dl>
+
+                <h3><code> *</code>&nbsp;&nbsp;multiplier les éléments</h3>
+                <dl class="list-inline">
+                <!-- ul>li*3>p+img -->
+                  <dt>ul&gt;li*3&gt;p+img</dt>
+                       <dd>&lt;ul&gt;</dd>
+                           <dd class="spacer">&lt;li&gt;</dd>
+                                  <dd class="twoSpacer">&lt;p&gt;&lt;/p&gt;</dd>
+                                  <dd class="twoSpacer">&lt;img src=&quot;&quot;alt=&quot;&quot; /&gt;</dd>
+                           <dd class="spacer">&lt;/li&gt;</dd>
+                           <dd class="spacer">&lt;li&gt;</dd>
+                                  <dd class="twoSpacer">&lt;p&gt;&lt;/p&gt;</dd>
+                                  <dd class="twoSpacer">&lt;img src=&quot;&quot;alt=&quot;&quot; /&gt;</dd>
+                           <dd class="spacer">&lt;/li&gt;</dd>
+                           <dd class="spacer">&lt;li&gt;</dd>
+                                  <dd class="twoSpacer">&lt;p&gt;&lt;/p&gt;</dd>
+                                  <dd class="twoSpacer">&lt;img src=&quot;&quot;alt=&quot;&quot; /&gt;</dd>
+                           <dd class="spacer">&lt;/li&gt;</dd>
+                       <dd>&lt;ul&gt;</dd>
+                </dl>
+          </div>
+          <div class="col-xs-5">
+                <h3><code> .</code>&nbsp;&nbsp;Ajouter un nom de classe</h3>
+                <dl class="list-inline">
+                <!-- ul class=wrapper -->
+                   <dt>ul.wrapper</dt><dd>&lt;ul class=&quot;wrapper&quot;&gt;</dd><dd>&lt;/ul&gt;</dd>
+                   <dt>.container</dt><dd>&lt;div class=&quot;container&quot;&gt;</dd><dd>&lt;/div&gt;</dd>
+                </dl>
+                <h3><code>#</code>&nbsp;&nbsp;Ajouter un id</h3>
+                <dl class="class-inline">
+                <!-- ul class=wrapper -->
+                   <dt>#entete</dt><dd>&lt;section id=&quot;entete&quot;&gt;</dd><dd>&lt;/section&gt;</dd>
+                </dl>
+                <h3><code>( )</code>&nbsp;&nbsp;Grouper des éléments</h3>
+                <dl class="class-inline">
+                <!-- ul class=wrapper -->
+                <!-- ul>li*3>p+img -->
+                  <dt>ul&gt;(li&gt;p+img+a)+li*2&gt;p+img</dt>
+                       <dd>&lt;ul&gt;</dd>
+                           <dd class="spacer">&lt;li&gt;<span class="spacer"></span><mark>(li&gt;p+img+a)</mark></dd>
+                                  <dd class="twoSpacer">&lt;p&gt;&lt;/p&gt;</dd>
+                                  <dd class="twoSpacer">&lt;img src=&quot;&quot;alt=&quot;&quot; /&gt;</dd>
+                                  <dd class="twoSpacer">&lt;a href=&quot;&quot;&gt:&lt;/a&gt;</dd>
+                           <dd class="spacer">&lt;/li&gt;</dd>
+                           <dd class="spacer">&lt;li&gt;</dd>
+                                  <dd class="twoSpacer">&lt;p&gt;&lt;/p&gt;</dd>
+                                  <dd class="twoSpacer">&lt;img src=&quot;&quot;alt=&quot;&quot; /&gt;</dd>
+                           <dd class="spacer">&lt;/li&gt;</dd>
+                           <dd class="spacer">&lt;li&gt;</dd>
+                                  <dd class="twoSpacer">&lt;p&gt;&lt;/p&gt;</dd>
+                                  <dd class="twoSpacer">&lt;img src=&quot;&quot;alt=&quot;&quot; /&gt;</dd>
+                           <dd class="spacer">&lt;/li&gt;</dd>
+                           <dd class="spacer">&lt;li&gt;</dd>
+                                  <dd class="twoSpacer">&lt;p&gt;&lt;/p&gt;</dd>
+                                  <dd class="twoSpacer">&lt;img src=&quot;&quot;alt=&quot;&quot; /&gt;</dd>
+                           <dd class="spacer">&lt;/li&gt;</dd>
+                       <dd>&lt;ul&gt;</dd>
+                </dl>
+
+        </div>
+
+
+      <h4></h4>
+      <dl class="class-inline">
+        <dt></dt>
+        <dd></dd>
+      </dl>
+      <h4></h4>
+      <dl class="class-inline">
+        <dt></dt>
+        <dd></dd>
+      </dl>
+      <h4></h4>
+      <dl class="class-inline">
+        <dt></dt>
+        <dd></dd>
+      </dl>
+
+
+
+      <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+      <p><a class="btn btn-primary btn-lg" href="http://docs.emmet.io/abbreviations/" role="button">Learn more &raquo;</a></p>
+    </div>
+  </section >
+
+  <!-- Section for CSS commands -->
+  <section id="lCSS" class="lCSS">
+    <div class="container">
+      <h1>Hello, world! 3</h1>
+      <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+    </div>
+  </section>
 
   <div class="container">
     <!-- Example row of columns -->
