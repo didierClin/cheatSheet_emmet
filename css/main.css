@@ -30,11 +30,9 @@ body{ background-color: lightgray; font-family: 'Titillium Web', sans-serif;
 .Rcss { background-color: lightpink; font-family: 'Titillium Web', sans-serif;}
 
 .main-image { display: none; }
-.line-icon {
- border-bottom: 2px solid white;
- margin: 15px;
-}
-dt { margin-left: 5%; font-weight: bold; font-size: 1.7em;}
+/* ligne blanche entete */
+.line-icon { border-bottom: 2px solid white; margin: 15px; }
+dt { margin-left: 5%; font-weight: bold; font-size: 1.5em; color: #B76A6A;}
 dd { margin-left: 20%;font-weight: bolder; color: darkblue;}
 .spacer {padding-left: 3em;}
 .twoSpacer {padding-left: 6em;}
