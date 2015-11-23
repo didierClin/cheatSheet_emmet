@@ -95,7 +95,13 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body{ background-color: lightgray; font-family: 'Titillium Web', sans-serif;}
 
+.Gen { background-color: lightgreen; font-family: 'Titillium Web', sans-serif;}
+
+.Rhtml {background-color: lightblue; font-family: 'Titillium Web', sans-serif;}
+
+.Rcss {background-color: lightyellow; font-family: 'Titillium Web', sans-serif;}
 
 
 
