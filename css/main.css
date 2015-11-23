@@ -7,7 +7,7 @@
 body{ background-color: lightgray; font-family: 'Titillium Web', sans-serif;
       padding-top: 50px; padding-bottom: 20px;
 }
-.navbar-inverse { background-color: rgb(56, 30, 10);}
+.navbar-inverse { background-color: #49423a; } /* rgb(56, 30, 10); */
 .Gen { background-color: lightgreen; font-family: 'Titillium Web', sans-serif;}
 
 .Rhtml {background-color: lightblue; font-family: 'Titillium Web', sans-serif;}
